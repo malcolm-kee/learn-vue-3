@@ -2,6 +2,8 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import CareerItem from './components/career-item.vue';
+import NumberControl from './components/number-control.vue';
+import Faq from './components/faq.vue';
 
 const jobs = [
   {
@@ -178,6 +180,8 @@ function onEdit(title: string) {
 </script>
 
 <template>
+  <NumberControl />
+  <Faq />
   <ul class="md:flex-1 space-y-3">
     <li v-for="job in jobs" :key="job._id">
       <CareerItem :title="job.title" department="job.department" @edit="onEdit" />
