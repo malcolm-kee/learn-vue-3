@@ -1,0 +1,14 @@
+{
+    "include": [
+      "./src/**/*"
+    ],
+    "compilerOptions": {
+      "module": "esnext",
+      "moduleResolution": "node",
+      "target": "esnext",
+      "jsx": "preserve",
+      "sourceMap": true,
+      "allowJs": true,
+      "strict": true
+    }
+  }
